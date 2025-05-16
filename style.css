@@ -18,7 +18,49 @@
 }
 /* Estilos del header */
 
-header {
+
+.headerBS {
+  font-family: "Poppins", sans-serif;
+  background-color: #06479c;
+  color: #EFEFEF;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-left: 20px;
+  color: #EFEFEF;
+  text-decoration: none;
+}
+
+/* Enlaces */
+.nav-link {
+  color: #EFEFEF;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+  
+}
+
+/* Lista horizontal en escritorio */
+.list-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+
+
+
+/* header {
     font-family: "Poppins", sans-serif;
     background-color: #06479c;
     color: #EFEFEF ;
@@ -28,6 +70,21 @@ header {
     flex-direction: row;
     justify-content:flex-start;
     align-items: center;
+}
+
+.headerBS {
+
+    font-family: "Poppins", sans-serif;
+    background-color: #06479c;
+    color: #EFEFEF;
+    height: 75px;
+    width:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+
+
 }
 
 .logo{
@@ -64,6 +121,10 @@ header nav{
    justify-content:end;
 }
 
+.navbar {
+  z-index: 1000;
+}
+
 .list-menu{
    width: 100%;
    height: auto;
@@ -78,7 +139,7 @@ header li {
    padding-left: none ;
    font-weight: 700;
    text-transform: uppercase;
- }
+ } */
 
 
  /* Estilos del Main */
@@ -887,13 +948,38 @@ footer nav {
 }
 
 
+
+
+
+
 @media (max-width: 500px){
 
    /* INDEX */
 
    /* HEADER */
 
-header {
+.list-menu {
+    flex-direction: column;
+    background-color: #205992;
+    padding: 10px;
+  }
+
+  .navbar-toggler {
+    border: 2px #EFEFEF solid;
+    color: #EFEFEF;
+  }
+
+  .navbar-nav {
+    width: 100%;
+  }
+
+  .nav-link {
+    padding: 8px 0;
+  }
+
+
+
+/* header {
    display: flex;
    align-items: center;
    justify-content: center;
@@ -921,7 +1007,7 @@ header li {
    justify-content: center;
    margin: 0%;
    padding-top: 4%;
-}
+} */
 
   
    /* BODY */
