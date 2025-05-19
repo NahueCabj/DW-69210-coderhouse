@@ -6,6 +6,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Righteous&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+
+
 /* Azul: #004aad
    Azul oscuro #06479c
    Naranja: #FF6500
@@ -365,12 +368,21 @@ header li {
 .titulo-running {
   position: relative;
   z-index: 2;
-  font-family: "Poppins", sans-serif;
-  color: #ff3333;
+  color: #ff0000;
   text-align: center;
   margin: 0;
   font-style: italic;
-  font-size: 50px;
+  
+}
+
+.titulo-running h2 {
+   font-size: 6rem;
+   font-family: "Fugaz One", sans-serif;
+   font-weight: 300;
+   font-style: normal;
+   padding-bottom: 5%;
+  
+
 }
 
 
@@ -380,7 +392,7 @@ header li {
    color: #EFEFEF;
    text-align: center;
    font-weight: 600;
-   margin: 5% auto ;
+   
    font-size: 17px;
    width: 60%;
    z-index: 2;
@@ -936,6 +948,10 @@ header li {
   box-shadow: none;
 }
 
+.accordion {
+   width: 50%; 
+ }
+
 /* Estilos del Footer */
 
 footer {
@@ -953,28 +969,42 @@ footer nav {
    width: 100%;
    display: flex;
    flex-direction: row;
-   justify-content: center;
+   justify-content: space-around;
    align-items: center;
 }
 
 .footer-logo {
    font-size: larger;
    padding: 8px;
+   margin-left: 4%;
    display: flex;
+   font-weight: 700;
+}
 
+.footer-logo a {
+   text-decoration: none;
+   color: #EFEFEF;
+}
+
+.footer-logo a h2 {
+   font-size: 2rem;
+  font-weight: 700;
 }
 
 .footer-parrafo {
-   padding: 8px;
-   padding-left: 70px;
-
+   margin-left: 10%;
+   padding: 3%;
+   width: 100%;
+   margin-right: 2%;
 }
 
 .footer-iconos {
    display: flex;
-   justify-content: end;
-   width: 100%;
+   justify-content: space-between;
+   width: 25%;
    padding: 8px;
+   margin-right: 4%;
+   
 
 }
 
@@ -1149,6 +1179,19 @@ header li {
    padding-left: 13px;
 }
 
+.faq {
+   flex-direction: column;
+   padding-bottom: 7%;
+}
+
+.faq-text {
+   margin-bottom: 6%;
+}
+
+.accordion {
+   width: 100%; 
+ }
+
    /* SUSCRIPCIONES */
 
 .titulo-subs  h2 {
@@ -1247,8 +1290,8 @@ header li {
    height: 50vh;
  } 
  
-.titulo-running {
-   font-size: 1.9rem;
+.titulo-running h2{
+   font-size: 2.5rem;
 }
 
 .text-dentro-running {
@@ -1271,6 +1314,7 @@ header li {
 
 .form-running {
    width: 90%;
+   margin-bottom: 20%;
 }
 
 .form-running form button {
@@ -1283,20 +1327,38 @@ header li {
 
 
 
+   /* FOOTER */
 
+footer nav {
+   flex-direction: column;
+}
 
-.footer-icono {
-   padding: 0%;
+.footer-parrafo {
+   margin: 0%;
+   padding: 3%;
+   width: 100%;
+   text-align: center;
+}
+
+.footer-iconos {
+   width: 100%;
+   justify-content: space-evenly;
+   padding: 0% 15%;
+   margin: 3% 0%;
+}
+
+.footer-logo {
+   margin-top: 4%;
 }
 
 .wpp-icon {
-   width: 10px;
-   height: 10px;
+   width: 55px;
+   height: 55px;
 }
 
 .ig-icon {
-   width: 10px;
-   height: 10px;
+   width: 55px;
+   height: 55px;
 }
 
 
