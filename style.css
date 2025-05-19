@@ -1021,12 +1021,7 @@ footer nav {
 
 
 
-@media (min-width: 100px) and (max-width: 499px) {
-  
- .menu h2 {
-   font-size: 3rem;
-  }
-  }
+
 
 @media (max-width: 500px){
 
@@ -1138,7 +1133,7 @@ header li {
 .carta {
    margin-top: 12%;
    margin-right: 20%;
-   width: 90%;
+   width: 95%;
    padding-right: 10%;
 }
 
