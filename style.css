@@ -57,7 +57,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 100%;
+  width: 75%;
 }
 
 
@@ -169,6 +169,7 @@ header li {
 
  .titulo-subs h2 {
    font-size: 50px;
+   font-weight: 600;
  }
 
  /* CAJAS DE SUBSCRIPCIONES */
@@ -554,9 +555,11 @@ header li {
    margin: auto;
    width: 100%;
    font-style: italic;
-   font-size: 50px;
-   font-weight: 900;
+}
 
+.titulo-cursos h1 {
+   font-size: 4.6rem;
+   font-weight: 600;
 }
 
 .foto-filtrado {
@@ -623,16 +626,16 @@ header li {
  }
  
  .titulo-productos h1 {
-   font-size: 1.8rem;       /* un poco más chico que por defecto */
+   font-size: 2rem;     
    margin-bottom: 10px;
    color: #222222;
    font-weight: 600;
  }
  
  .titulo-productos h2 {
-   font-size: 2rem;         /* un poco más grande */
+   font-size: 2.8rem;        
    color: #333;
-   font-weight: 400;
+   font-weight: 500;
  }
  
 
@@ -1239,8 +1242,8 @@ header li {
    height: 12rem;
 }
 
-.titulo-cursos {
-   font-size: 2rem;
+.titulo-cursos h1{
+   font-size: 3rem;
 }
 
 .filtrado {
@@ -1251,6 +1254,7 @@ header li {
 .foto-filtrado {
    height: 500px;
    width: 400px;
+   padding-bottom: 5%;
 }
 
 .arte-latte {
@@ -1261,9 +1265,11 @@ header li {
 .foto-arte-latte {
    height: 500px;
    width: 400px;
+   padding-bottom: 5%;
 }
 
 .texto-cursos {
+   padding: 0% 5%;
    padding-top: 3% ;
 }
 
