@@ -1021,7 +1021,12 @@ footer nav {
 
 
 
-
+@media (min-width: 100px) and (max-width: 499px) {
+  
+ .menu h2 {
+   font-size: 3rem;
+  }
+  }
 
 @media (max-width: 500px){
 
@@ -1140,6 +1145,10 @@ header li {
 .menu {
    font-size: 5rem;
    padding-left: 2%;
+}
+
+.menu h2 {
+   box-sizing: border-box;
 }
 
 .menu-lista {
