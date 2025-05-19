@@ -19,6 +19,9 @@
    padding: 0;
    box-sizing: border-box;
 }
+
+
+
 /* Estilos del header */
 
 
@@ -52,7 +55,6 @@
   
 }
 
-/* Lista horizontal en escritorio */
 .list-menu {
   display: flex;
   flex-direction: row;
@@ -60,89 +62,6 @@
   width: 75%;
 }
 
-
-
-
-/* header {
-    font-family: "Poppins", sans-serif;
-    background-color: #06479c;
-    color: #EFEFEF ;
-    height: 75px;
-    width:auto;
-    display: flex;
-    flex-direction: row;
-    justify-content:flex-start;
-    align-items: center;
-}
-
-.headerBS {
-
-    font-family: "Poppins", sans-serif;
-    background-color: #06479c;
-    color: #EFEFEF;
-    height: 75px;
-    width:auto;
-    display: flex;
-    flex-direction: row;
-    justify-content:flex-start;
-    align-items: center;
-
-
-}
-
-.logo{
-   font-size: 1.5rem;
-   font-weight: 800;
-   display: flex;
-   flex-direction: row;
-   justify-content:flex-start;
-   align-items: center;
-   margin-left: 20px;
-
-}
-header a {
-   font-family: "Poppins", sans-serif;
-    color: #EFEFEF;
-    text-decoration: none;
-}
-
-header div{
-   height: 100%;
-   width: 70%;
-   display: flex;
-   flex-direction: row;
-   align-items:space-between ;
-   justify-content: end;
-}
-
-header nav{
-   width: 100%;
-   height: auto;
-   display: flex;
-   flex-direction: row;
-   align-content:center;
-   justify-content:end;
-}
-
-.navbar {
-  z-index: 1000;
-}
-
-.list-menu{
-   width: 100%;
-   height: auto;
-   display: flex;
-   flex-direction: row;
-   justify-content: space-around ;
-}
-
-header li {
-
-   list-style-type: none;
-   padding-left: none ;
-   font-weight: 700;
-   text-transform: uppercase;
- } */
 
 
  /* Estilos del Main */
@@ -225,13 +144,13 @@ header li {
  }
 
  .sub-brasil img {
-   position: absolute;       /* Posiciona la imagen dentro del contenedor */
+   position: absolute;
    top: 0;
    left: 0;
    width: 100%;
    height: 5%;
-   object-fit: cover;         /* La imagen cubrirá todo el espacio, recortando si es necesario */
-   object-position: center;   /* Centra la imagen si se recorta */
+   object-fit: cover; 
+   object-position: center;   
  }
 
  /* CUADRO SUB AFRICA */
@@ -1051,37 +970,6 @@ footer nav {
     padding: 8px 0;
   }
 
-
-
-/* header {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-}
-
-header nav {
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   align-items: center;
-   box-sizing: border-box;
-
-}
-
-header li {
-   box-sizing: border-box;
-}
-
-.list-menu {
-   justify-content: center;
-   align-items: center;
-}
-
-.logo {
-   justify-content: center;
-   margin: 0%;
-   padding-top: 4%;
-} */
 
   
    /* BODY */
