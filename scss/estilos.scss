@@ -1,0 +1,19 @@
+/* Fuentes agregadas y paleta de colores */
+
+
+@use "partials/header-y-footer";
+@use "partials/index";
+@use "partials/suscripciones";
+@use "partials/cursos";
+@use "partials/productos";
+@use "partials/kika-running";
+@use "partials/mediaq";
+@use "partials/variables" as v;
+@use "partials/mixins" as mx;
+
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}

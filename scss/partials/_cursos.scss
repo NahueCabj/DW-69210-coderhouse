@@ -1,0 +1,73 @@
+@use "./variables" as v;
+@use "./mixins" as mx;
+
+    /* CURSOS */
+
+.section-titulo-cursos{
+   background-image: url(../Imagenes/cafe1.png);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   height: 40vh;
+   padding-top: 40px;
+}    
+
+.titulo-cursos{
+    background-color: transparent;
+    color: white;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    font-style: italic;
+        h1 {
+            font-size: 4.6rem;
+            font-weight: 600;
+        }   
+}
+
+.foto-filtrado {
+    @include mx.size (500px,600px);
+}
+.foto-arte-latte {
+    @include mx.size (500px,600px);   
+}
+
+.filtrado {
+    font-family: v.$fuente;
+    @include mx.flex-row;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+    background-color: v.$blanco;   
+}
+
+.texto-cursos {
+    padding-left: 3%;
+}
+
+.arte-latte {
+    font-family: v.$fuente;
+    @include mx.flex-row;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+    background-color: v.$blanco;
+}
+
+.boton-cursos {
+    background-color: v.$negro;
+    color: v.$blanco;
+    padding: 10px 20px;
+    margin-top: 4%;
+    border: 2px black solid;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+        &:hover {
+            background-color: v.$blanco;
+            cursor: pointer;
+            color: v.$negro;
+        }
+}

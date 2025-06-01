@@ -1,0 +1,92 @@
+@use "./variables" as v;
+@use "./mixins" as mx;
+
+    /*SUSCRIPCIONES*/
+
+.section-subs-titulo {
+    font-family: v.$fuente;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: v.$blanco;
+ }
+
+.titulo-subs {
+    text-align: center;
+    width: 100%;
+    border-style: none;
+    color: v.$negro;
+        h2 {
+            font-size: 50px;
+            font-weight: 600;
+        }
+}
+
+    /* CAJAS DE SUBSCRIPCIONES */
+
+.planes {
+    font-family: v.$fuente;
+    @include mx.flex-row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2%;
+    padding: 6% 3%;
+    margin-top: 2%;
+        h3 {
+            font-weight: 550;
+        }
+}
+
+    /* CUADRO SUB BRASIL */
+
+.sub-brasil, .sub-africa, .sub-colombia {
+    @include mx.size(33%,100%);    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border: 2px black solid;
+    padding: 3%;
+    text-align: center;
+    position: relative;
+        h2 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            @include mx.size(100%,auto);
+            margin-bottom: 4%;
+            font-weight: 800;
+        }
+        h3 {
+            margin-bottom: 8%;
+        }
+        ul {
+            margin: 3%;
+        }
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            @include mx.size(100%,5%);
+            object-fit: cover; 
+            object-position: center;   
+        }
+ }
+
+.boton-subs {
+    background-color: v.$blanco;
+    color: v.$negro;
+    padding: 10px 20px;
+    border: 1px black solid;
+    border-radius: 2px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 6%;
+        &:hover {
+            background-color: v.$negro;
+            cursor: pointer;
+            color: v.$blanco;
+        }
+}

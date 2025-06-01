@@ -1,0 +1,173 @@
+@use "./variables" as v;
+@use "./mixins" as mx;
+
+    /* KIKA RUNNING */
+
+.foto-running {
+    position: relative;
+    background-image: url(../Imagenes/running_banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            @include mx.size (100%,100%);
+            background-color: rgba(0, 0, 0, 0.6); 
+            z-index: 1;
+        }
+}
+
+.titulo-running {
+    position: relative;
+    z-index: 2;
+    color: #ff0000;
+    text-align: center;
+    margin: 0;
+    font-style: italic;
+        h2 {
+            font-size: 6rem;
+            font-family: "Fugaz One", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            padding-bottom: 5%;
+        }
+}
+
+.text-dentro-running {
+    background-color:rgba(0, 0, 0, 0.7);
+    font-family: v.$fuente;
+    color: v.$blanco;
+    text-align: center;
+    font-weight: 600;
+    font-size: 17px;
+    width: 60%;
+    z-index: 2;
+}
+
+/*Formulario*/
+
+.section-form {
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: v.$blanco;
+         h3 {
+            text-align: center;
+            font-size: large;
+            font-weight: 400;
+        }
+}
+
+.form-titulo {
+    font-family: v.$fuente;
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+
+.form-running {
+    font-family: v.$fuente;
+    color: v.$negro;
+    background-color: #ffffff;
+    text-align: center;
+    font-size: medium;
+    font-weight: 600;
+    margin-top: 30px;
+    @include mx.size(40%,70%);
+    border: 2px solid black;
+    border-radius: 4px;
+    margin-bottom: 6%;
+    padding: 0% 2%;
+        form {
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            align-content: space-between;
+                button {
+                    font-family: v.$fuente;
+                    font-weight: 600;
+                    margin-top: 10%;
+                    border: 2px solid black;
+                    border-radius: 4px;
+                    @include mx.size(30%,40px);
+                    background-color: v.$negro;
+                    color: v.$blanco;
+                }
+                h2 {
+                    padding-bottom: 20px;
+                }
+                label {
+                    padding-top: 5%;
+                    width: 100%;
+                    text-align: left;
+                }
+                input {
+                    @include mx.size(100%,auto);
+                    padding: 7px;
+                    font-size: 15px;
+                }
+
+        }            
+}
+
+    /*Grid*/
+
+.running-historia {
+    display: grid;
+    grid-template-areas:
+    'img1 p1 p1'
+    'img3 img3 img3'
+    'p2 p2 img2';
+    
+    grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
+    font-family: v.$fuente;
+    background-color: v.$negro;
+    color: v.$blanco;
+        img {
+            @include mx.size(100%,100%); 
+            object-fit: cover;
+        }
+        p {
+            padding: 4%;
+            font-size: larger;
+            font-weight: 600;
+            height: 100%;
+            box-sizing: border-box;
+            display: flex; 
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+}    
+
+.corredor-1 {
+    grid-area: img1;
+}
+
+.texto-1 {
+    grid-area: p1;
+}
+
+.corredor-3 {
+    grid-area: img3;
+}
+
+.texto-2 {
+    grid-area: p2;
+}
+
+.corredor-2 {
+    grid-area: img2;
+}

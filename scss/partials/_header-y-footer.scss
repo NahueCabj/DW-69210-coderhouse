@@ -1,0 +1,102 @@
+@use "./variables" as v;
+@use "./mixins" as mx;
+
+        
+
+
+        /* HEADER */
+
+.headerBS {
+    font-family: v.$fuente;
+    background-color: v.$azul;
+    color: v.$blanco;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-left: 20px;
+    color: v.$blanco;
+    text-decoration: none;
+}
+
+/* Enlaces */
+
+.nav-link {
+  color: v.$blanco;
+  font-weight: 700;
+  text-transform: uppercase;
+  
+  &:hover {
+    color: #ffffff;
+  }
+}
+
+.list-menu {
+  @include mx.flex-row;
+  justify-content: space-around;
+  width: 75%;
+}
+
+
+        /* FOOTER */
+
+footer {
+   font-family: v.$fuente;
+   background-color: v.$azul;
+   color: v.$blanco;
+   @include mx.flex-row;
+   @include mx.size (100%, 10%);
+   
+    nav {
+        width: 100%;
+        @include mx.flex-row;
+        justify-content: space-around;
+        align-items: center;
+    } 
+}
+
+.footer-logo {
+   font-size: larger;
+   padding: 8px;
+   margin-left: 4%;
+   display: flex;
+   font-weight: 700;
+
+    a {
+        text-decoration: none;
+        color: v.$blanco;
+
+            h2 {
+                font-size: 2rem;
+                font-weight: 700;
+            }
+    }
+}
+
+.footer-parrafo {
+   margin-left: 10%;
+   padding: 3%;
+   width: 100%;
+   margin-right: 2%;
+}
+
+.footer-iconos {
+   display: flex;
+   justify-content: space-between;
+   width: 25%;
+   padding: 8px;
+   margin-right: 4%;
+}
+
+.wpp-icon {
+   @include mx.size (70px,70px);
+}
+
+.ig-icon {
+   @include mx.size (70px,70px);
+}

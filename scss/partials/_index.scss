@@ -1,0 +1,215 @@
+@use "./variables" as v;
+@use "./mixins" as mx;
+
+    /* INDEX */
+
+.principal {
+   font-family: v.$fuente;
+   background-color: #181818;
+   color: v.$blanco;
+   @include mx.size(100%,100%);
+   @include mx.flex-row;
+   justify-content: space-between;
+   align-items: center;
+   padding: 5%;
+ }
+
+ .texto-principal {
+   padding-right: 3%;
+    h1 {
+        font-size: 2rem;
+        padding-bottom: 3%;
+    }
+}
+
+.img-principal {
+   display: grid;
+   grid-template-areas:
+   'img1 img2'
+   'img1 img3'
+   ;
+
+   grid-template-columns: 1fr, 1fr;
+   gap: 2%;
+}
+
+.interior-caf {
+   grid-area: img1;
+   @include mx.size (auto,615px);
+}
+
+.mesa-afuera {
+   grid-area: img2;
+   @include mx.size (250px,300px);
+}
+
+.mesa-adentro {
+   grid-area: img3;
+   @include mx.size (250px,300px);
+}
+
+.imagen-div-index {
+    background-image:url( ../Imagenes/Cafeteria_fondo_menu.png);
+    background-size: cover;
+    background-position:35% 65%;;
+    @include mx.size (100%,100%);
+    padding: 5% 0%;
+    @include mx.flex-row;
+    justify-content: space-between;
+    align-items: center;      
+        h3 {
+            font-size: larger;
+            font-weight: 700;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding-top: 15%;
+            padding-left: 3%; 
+        }
+ }
+
+.carta {
+    @include mx.size(33%,auto); 
+    color: v.$azul;
+    background-color: v.$blanco;
+    font-family: v.$fuente;
+    margin-left: 10%;
+    padding-bottom: 3%;
+    border-radius: 3px;
+    border-color: rgb(190, 190, 190);
+ }
+
+.menu {
+    h2{
+        display: flex;
+        flex-direction: column;
+        font-family: "Righteous", sans-serif;
+        font-size: 9rem;
+        font-style: normal;
+        text-align: center;
+        font-weight: 1000;
+        padding-top: 2%; 
+    }
+}
+
+.menu-lista {
+    display: flex;
+    justify-content: center;
+    gap: 60%;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.125rem;
+    padding-top: 2%;
+}
+
+.menu-lista-dulce {
+    display: flex;
+    justify-content: center;
+    gap: 25%;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.125rem;
+    padding-top: 2%;
+}
+
+.menu-lista-salado {
+    display: flex;
+    justify-content: center;
+    gap: 30%;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.125rem;
+    padding-top: 2%;
+}
+
+.menu-bebidas {
+    list-style-type: none;
+    padding: 6px 0;
+}
+
+.precios {
+    list-style-type: none;
+    padding: 6px 0;
+}
+
+.carta {
+    p{
+        display: flex;
+        justify-content: center;
+        padding-top: 10%;
+        font-weight:600;
+    }
+}
+
+.descripcion-menu{
+    font-family: v.$fuente;
+    color: v.$blanco;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    padding: 10px;
+    width: 35%;
+    font-size: large;
+    font-weight: 500;
+    text-align: center;
+    margin-right: 10%;
+}
+
+.fondo-ubicacion {
+    background-color: v.$blanco;
+    height: 100%;
+}
+
+.ubicacion {
+    text-align: center;
+    font-family: v.$fuente;
+    padding-top: 2% ;
+    width: 100%;
+    color: black;
+    background-color: transparent;
+}
+
+.map-ubicacion {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 3%;
+    text-align: center; 
+}
+
+.faq {
+    @include mx.flex-row;
+    justify-content: space-between;
+    padding: 5%;
+    background-color: v.$blanco;
+}
+
+.faq-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: v.$fuente;
+        h2 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+        p {
+            font-size: 1.3rem;
+        }   
+}
+
+.accordion-button {
+    background-color: white;
+    color: v.$negro;
+        &:not(.collapsed) {
+            background-color: rgb(14, 14, 14);
+            color: white;
+            box-shadow: none;
+            border-radius: 0 !important;
+        }
+        &:focus {
+            box-shadow: none;
+        }
+}
+
+.accordion {
+    width: 50%; 
+}
