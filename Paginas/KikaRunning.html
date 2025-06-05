@@ -13,6 +13,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+
+    <!-- AOS  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     
     <link rel="stylesheet" href="../css/estilos.css">
 
@@ -55,7 +58,7 @@
                 <h2>Llena este formulario y empeza a correr</h2>
                 <h3>Te contactaremos con todo lo que tenes que saber</h3>
             </div>
-            <div class="form-running">        
+            <div data-aos="fade-up" class="form-running">        
                 <form action="completar" method="post">
 
                     <h2>INSCRIBITE</h2>
@@ -123,6 +126,10 @@
         </nav>        
     </footer>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </html>
