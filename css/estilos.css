@@ -323,7 +323,7 @@ footer nav {
   border-style: none;
   color: black;
 }
-.titulo-subs h2 {
+.titulo-subs h1 {
   font-size: 50px;
   font-weight: 600;
 }
@@ -593,7 +593,7 @@ footer nav {
   margin: 0;
   font-style: italic;
 }
-.titulo-running h2 {
+.titulo-running h1 {
   font-size: 6rem;
   font-family: "Fugaz One", sans-serif;
   font-weight: 300;
